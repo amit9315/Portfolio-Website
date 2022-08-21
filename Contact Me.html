@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Me</title>
+    <style>
+        /************************* Tag selectors ******************/
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: lightcoral;
+            text-decoration: lightblue underline;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        label {
+            background-color: mistyrose;
+            font-style: italic;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        /************************* Class selectors ****************/
+        .feedback {
+            background-color: lightgray;
+        }
+
+        .button {
+            background-color: mistyrose;
+            font-size: medium;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Contact Me</h1>
+        <!------------------ label for name  ----------------->
+        <label for="name">Name</label><br>
+        <input type="name" required placeholder="Enter your name">
+        <br><br>
+        <!------------------- label for contact no. ---------------->
+        <label for="Contact no.">Contact No.</label><br>
+        <input type="number" name="contact" required placeholder="ex:9854321234">
+        <br><br>
+        <!------------------- label for email id  ------------------->
+        <label for="email">Email ID</label><br>
+        <input type="email" required placeholder="test124@gmail.com">
+        <br><br>
+        <!------------------ label for which type of web developer need  ----------->
+        <label for="need">Which type of Web Developer you want?</label><br>
+        <input type="checkbox" name="need" class="need1"> Front-end Developer <br>
+        <input type="checkbox" name="need" class="need1"> Back-end Developer <br>
+        <input type="checkbox" name="need" class="need1"> Full Stack Web Developer
+        <br><br>
+        <!------------------- label for feedback/message  --------------------->
+        <label for="message">Your Message</label><br>
+        <textarea name="feedback" class="feedback" cols="40" rows="5"></textarea>
+        <br><br>
+        <!-------------------- button for submit form ---------------->
+        <button type="submit" onclick="alert('Submitted - developer will contact you')" class="button">Submit</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!------------------ button for return to Home Page ---------------------->
+        <button class="back"><a
+                href="D:\Testbook Full Stack Developer\VS Code All files\Portfolio Website\Home Page.html">Back</a></button>
+    </form>
+</body>
+
+</html>
